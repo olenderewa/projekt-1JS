@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>wydatki</title>
+  </head>
+  <body>
+    <header class="center">
+      <img class="logo" src="LOGO.png" alt="LOGO" />
+      <h1 id="balance">Bilans wynosi zero</h1>
+    </header>
+    <div class="box-container">
+      <div class="income">
+        <form id="incomeForm">
+          <input
+            type="text"
+            name="incomeName"
+            id="incomeName"
+            required
+            placeholder="nazwa przychodu"
+          /><input
+            type="number"
+            name="incomeAmount"
+            id="incomeAmount"
+            required
+            min="0.01"
+            step="0.01"
+            placeholder="kwota"
+          />
+          <button>Dodaj</button>
+        </form>
+        <ul class="list" id="incomeList"></ul>
+        <p class="sum">Suma przychodów: <span id="incomeSum">0</span> zł</p>
+      </div>
+      <div class="expenses">
+        <form id="expensesForm">
+          <input
+            type="text"
+            name="expensesName"
+            id="expensesName"
+            required
+            placeholder="nazwa wydatku"
+          /><input
+            type="number"
+            name="expensesAmount"
+            id="expensesAmount"
+            required
+            min="0.01"
+            step="0.01"
+            placeholder="kwota"
+          />
+          <button>Dodaj</button>
+        </form>
+        <ul class="list" id="expensesList"></ul>
+        <p class="sum">Suma wydatków: <span id="expensesSum">0</span> zł</p>
+      </div>
+      <script src="index.js" type="module"></script>
+    </div>
+  </body>
+</html>

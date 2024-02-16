@@ -1,0 +1,33 @@
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+.box-container {
+  margin: 0 auto;
+  display: grid;
+  width: 1000px;
+  height: 400px;
+  grid-template-columns: 46% 46%;
+  grid-gap: 2%;
+}
+.income,
+.expenses {
+  display: flex;
+  flex-direction: column;
+  background-color: #31bdbd;
+}
+.sum {
+  justify-self: flex-end;
+}
+.list {
+  height: 100%;
+}
+.editBtn {
+  margin-left: 4px;
+  margin-right: 4px;
+}
