@@ -136,8 +136,6 @@ const expensesAmount = document.querySelector("#expensesAmount");
 
 const expensesData = [];
 
-const balance = document.querySelector("#balance");
-
 const addExpenses = (event) => {
   event.preventDefault();
   const expensesNameValue = expensesName.value;
